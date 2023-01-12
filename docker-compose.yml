@@ -1,0 +1,17 @@
+version: '3'
+services:
+  url-collector:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - ftp_proxy
+        - no_proxy
+      dockerfile: Dockerfile
+    container_name: url-collector
+    environment:
+      - URL_COLLECTOR_PORT=8092
+    hostname: url-collector
+    ports:
+        - "8092:8092"
