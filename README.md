@@ -23,7 +23,9 @@ Aplication has following configuration environment variables:
 
 
 URL\_COLLECTOR\_PORT: PORT number for collector
+
 NASA\_API\_KEY: API\_KEY for nasa api service (default DEMO\_KEY)
+
 CONCURRENT\_REQUESTS: number of maximum requests served in parallel
 
 
